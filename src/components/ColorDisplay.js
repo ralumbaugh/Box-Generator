@@ -4,7 +4,7 @@ import './ColorDisplay.css';
 
 
 const ColorDisplay = props =>{
-    const{color, setColor} = props;
+    const{color} = props;
 
     return(
         <div className="color-box">

@@ -5,15 +5,12 @@ import ColorInput from './components/ColorInput'
 import ColorDisplay from './components/ColorDisplay'
 
 function App() {
-  // const [totalcolors, setTotalcolors] = useState([]);
   const [totalcolors, setTotalcolors] = useState([[]]);
-  
 
   return (
     <div className="App">
-      {/* <ColorInput onNewColor={ newColorTime } colors={totalcolors} setColor={setTotalcolors}/> */}
       <ColorInput color={totalcolors} setColor={setTotalcolors}/>
-      <ColorDisplay color={totalcolors} setColor={setTotalcolors}/>
+      <ColorDisplay color={totalcolors}/>
     </div>
   );
 }
